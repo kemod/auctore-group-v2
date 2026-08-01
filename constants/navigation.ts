@@ -1,0 +1,18 @@
+export const navigation = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+  {
+    label: "Brands",
+    href: "/brands",
+  },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+] as const;
