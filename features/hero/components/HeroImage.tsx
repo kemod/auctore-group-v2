@@ -12,10 +12,12 @@ export default function HeroImage() {
       <div className="relative overflow-hidden rounded-[36px] border border-neutral-200 bg-white shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
         <Image
           src="/images/hero/hero-editorial.png"
-          alt="Auctore Group"
+          alt="Model mengenakan koleksi fashion premium dari Auctore Group"
           width={900}
           height={1125}
           priority
+          fetchPriority="high"
+          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 560px"
           className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
         />
 
