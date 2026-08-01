@@ -1,0 +1,64 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+import { Container, Section } from "@/components/common";
+
+interface BrandHeroProps {
+  name: string;
+  category: string;
+  image: string;
+}
+
+export default function BrandHero({
+  name,
+  category,
+  image,
+}: BrandHeroProps) {
+  return (
+    <Section className="overflow-hidden pt-44 pb-36">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-stone-50 via-white to-white" />
+
+      <Container>
+        <div className="grid items-center gap-20 lg:grid-cols-[1fr_560px]">
+          <div className="max-w-xl">
+            <span className="inline-flex rounded-full border border-stone-200 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-neutral-600">
+              {category}
+            </span>
+
+            <h1 className="mt-8 font-playfair text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-neutral-900 md:text-6xl xl:text-7xl">
+              {name}
+            </h1>
+
+            <p className="mt-8 text-lg leading-8 text-neutral-600">
+              Designed with timeless aesthetics, premium quality,
+              and thoughtful craftsmanship for modern living.
+            </p>
+
+            <div className="mt-12">
+              <Link
+                href="/contact"
+                className="inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-neutral-800"
+              >
+                Contact Us
+
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[36px] border border-neutral-200 shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+            <Image
+              src={image}
+              alt={name}
+              width={900}
+              height={1125}
+              className="aspect-[4/5] w-full object-cover transition duration-700 hover:scale-[1.03]"
+              priority
+            />
+          </div>
+        </div>
+      </Container>
+    </Section>
+  );
+}
