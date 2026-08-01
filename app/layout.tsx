@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { inter, playfair } from "@/config";
-import { PageTransition } from "@/components/transition";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import { PageTransition } from "@/components/transition";
+import { StructuredData } from "@/components/seo";
+import {
+  organizationSchema,
+  websiteSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://auctoregroup.com"),
@@ -14,7 +19,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Auctore Group merupakan perusahaan holding fashion yang membangun berbagai brand berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
+    "Auctore Group merupakan perusahaan holding fashion yang membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
 
   keywords: [
     "Auctore Group",
@@ -42,6 +47,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+
     googleBot: {
       index: true,
       follow: true,
@@ -60,9 +66,12 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://auctoregroup.com",
     siteName: "Auctore Group",
+
     title: "Auctore Group",
+
     description:
       "Membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
+
     images: [
       {
         url: "/images/seo/og-image.jpg",
@@ -75,9 +84,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
+
     title: "Auctore Group",
+
     description:
       "Membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
+
     images: ["/images/seo/og-image.jpg"],
   },
 
@@ -119,8 +131,14 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background font-sans text-foreground antialiased">
+        {/* Structured Data */}
+        <StructuredData data={organizationSchema} />
+        <StructuredData data={websiteSchema} />
+
+        {/* Scroll Progress */}
         <ScrollProgress />
 
+        {/* Page Transition */}
         <PageTransition>
           {children}
         </PageTransition>
