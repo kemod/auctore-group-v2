@@ -14,21 +14,19 @@ export default function AboutHero() {
 
           <div className="max-w-xl">
             <span className="inline-flex items-center rounded-full border border-stone-200 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-neutral-600 shadow-sm">
-              About Auctore
+              Tentang Kami
             </span>
 
             <h1 className="mt-8 font-playfair text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-neutral-900 md:text-6xl xl:text-7xl">
-              Building
+              Membangun
               <br />
-              Brands That
+              Brand Yang
               <br />
-              Endure.
+              Bertahan Lama.
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              Auctore Group is a modern fashion holding company dedicated to
-              building timeless brands through thoughtful craftsmanship,
-              innovation, and long-term vision.
+              Auctore Group adalah perusahaan holding fashion yang berkomitmen membangun berbagai brand berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">
@@ -45,7 +43,7 @@ export default function AboutHero() {
                 href="/contact"
                 className="inline-flex h-14 items-center rounded-full border border-neutral-300 bg-white px-8 text-sm font-medium text-neutral-900 transition-all duration-300 hover:border-black hover:bg-neutral-50"
               >
-                Contact Us
+                Hubungi Kami
               </Link>
             </div>
           </div>

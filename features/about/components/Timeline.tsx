@@ -2,28 +2,28 @@ import { Container, Heading, Section } from "@/components/common";
 
 const timeline = [
   {
-    year: "2024",
-    title: "Auctore Was Founded",
+    year: "2025",
+    title: "Auctore Group Didirikan",
     description:
-      "Auctore Group was established with the ambition to build modern fashion brands with timeless value.",
+      "Perjalanan kami dimulai dengan visi membangun perusahaan holding fashion yang menghadirkan brand berkualitas dengan nilai jangka panjang.",
   },
   {
     year: "2025",
-    title: "First Brand Launch",
+    title: "Peluncuran Brand Pertama",
     description:
-      "Jenn Aira became the first brand under Auctore Group, introducing a refined approach to everyday fashion.",
+      "Jenn Aira menjadi brand pertama yang menghadirkan fashion wanita dengan desain modern, elegan, dan berkualitas.",
   },
   {
     year: "2026",
-    title: "Portfolio Expansion",
+    title: "Perluasan Brand",
     description:
-      "Auctfits joined the portfolio, strengthening our commitment to creating accessible premium essentials.",
+      "Auctfits bergabung sebagai bagian dari Auctore Group untuk melengkapi kebutuhan fashion esensial bagi gaya hidup modern.",
   },
   {
     year: "Future",
-    title: "Global Growth",
+    title: "Langkah Selanjutnya",
     description:
-      "Continuing to expand our portfolio while bringing Indonesian fashion brands to a broader international audience.",
+      "Kami akan terus mengembangkan portofolio brand serta memperluas jangkauan Auctore Group ke pasar yang lebih luas.",
   },
 ];
 
@@ -32,15 +32,15 @@ export default function Timeline() {
     <Section background="stone">
       <Container>
         <Heading
-          eyebrow="Our Journey"
+          eyebrow="Perjalanan Kami"
           title={
             <>
-              Growing One
+              Bertumbuh Selangkah
               <br />
-              Step At A Time.
+               Demi Selangkah.
             </>
           }
-          description="Every milestone reflects our commitment to building brands with purpose and long-term vision."
+          description="Setiap pencapaian merupakan bagian dari perjalanan kami dalam membangun brand fashion yang berkualitas dan berkelanjutan."
         />
 
         <div className="relative mx-auto mt-20 max-w-4xl">

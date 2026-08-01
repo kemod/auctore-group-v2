@@ -2,19 +2,19 @@ import { Container, Heading, Section } from "@/components/common";
 
 const faqs = [
   {
-    question: "How can I collaborate with Auctore Group?",
+    question: "Bagaimana cara bekerja sama dengan Auctore Group?",
     answer:
-      "You can reach us through our contact form or email. We'll review your inquiry and get back to you as soon as possible.",
+      "Silakan hubungi kami melalui formulir kontak atau email yang tersedia. Tim kami akan meninjau setiap peluang kerja sama dan menghubungi Anda kembali.",
   },
   {
-    question: "Do you accept business partnerships?",
+    question: "Apakah Auctore Group membuka peluang kemitraan?",
     answer:
-      "Yes. We welcome partnership opportunities that align with our long-term vision and brand values.",
+      "Ya. Kami terbuka terhadap berbagai bentuk kolaborasi yang sejalan dengan visi dan nilai perusahaan.",
   },
   {
-    question: "Where is Auctore Group located?",
+    question: "Di mana lokasi Auctore Group?",
     answer:
-      "Our company is based in Indonesia while serving customers and partners across different markets.",
+      "Auctore Group berbasis di Kota Cimahi, Jawa Barat, Indonesia dan terus berkembang untuk menjangkau pasar yang lebih luas.",
   },
 ];
 
@@ -23,7 +23,7 @@ export default function FAQ() {
     <Section>
       <Container>
         <Heading
-          eyebrow="Frequently Asked Questions"
+          eyebrow="Pertanyaan Yang Sering Diajukan."
           title={
             <>
               Everything You
@@ -31,7 +31,7 @@ export default function FAQ() {
               Need To Know.
             </>
           }
-          description="Here are some of the most common questions about Auctore Group."
+          description="Temukan jawaban atas beberapa pertanyaan yang paling sering diajukan mengenai Auctore Group, mulai dari kerja sama hingga informasi perusahaan."
         />
 
         <div className="mx-auto mt-20 max-w-4xl space-y-6">

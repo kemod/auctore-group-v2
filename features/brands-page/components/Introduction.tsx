@@ -19,24 +19,21 @@ export default function Introduction() {
 
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-500">
-              Brand Portfolio
+              Portofolio Brand
             </p>
 
             <h2 className="mt-6 font-playfair text-5xl font-bold leading-tight text-neutral-900">
-              Every Brand
+              Setiap Brand
               <br />
-              Has Its Own Story.
+              Memiliki Ceritanya Sendiri.
             </h2>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              We believe each brand should possess a unique identity while
-              reflecting the same values of quality, craftsmanship, and
-              long-term growth.
+              Kami percaya bahwa setiap brand memiliki karakter, tujuan, dan identitas yang unik. Karena itu, setiap brand dikembangkan dengan pendekatan yang berbeda sesuai dengan target dan kebutuhan pelanggannya.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Together, these brands represent Auctore Group's vision to
-              create meaningful fashion experiences for modern lifestyles.
+              Meskipun memiliki identitas masing-masing, seluruh brand di bawah Auctore Group tetap mengedepankan kualitas, inovasi, serta komitmen untuk memberikan pengalaman terbaik kepada pelanggan.
             </p>
           </div>
         </div>

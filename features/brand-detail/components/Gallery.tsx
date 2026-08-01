@@ -4,24 +4,22 @@ import { Container, Heading, Section } from "@/components/common";
 
 interface GalleryProps {
   images: string[];
+  title: React.ReactNode;
+  description: string;
 }
 
 export default function Gallery({
   images,
+  title,
+  description,
 }: GalleryProps) {
   return (
     <Section>
       <Container>
         <Heading
-          eyebrow="Gallery"
-          title={
-            <>
-              Editorial
-              <br />
-              Moments.
-            </>
-          }
-          description="A glimpse into the visual identity and timeless aesthetic of our brand."
+          eyebrow="Galeri"
+          title={title}
+          description={description}
         />
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">
@@ -32,7 +30,7 @@ export default function Gallery({
             >
               <Image
                 src={image}
-                alt="Gallery"
+                alt="Galeri Brand"
                 width={900}
                 height={1100}
                 className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -31,29 +31,25 @@ export default function BrandStory({
 
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-500">
-              Brand Story
+              Cerita Brand
             </p>
 
             <h2 className="mt-6 font-playfair text-5xl font-bold leading-tight text-neutral-900">
-              Designed For
+              Elegan Dalam
               <br />
-              Everyday Confidence.
+              Setiap Detail.
             </h2>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              {name} was created with the belief that fashion should be
-              timeless, comfortable, and effortlessly elegant.
+              {name} lahir dari keyakinan bahwa setiap perempuan berhak tampil percaya diri melalui pakaian yang nyaman, berkualitas, dan memiliki desain yang elegan.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Every collection reflects careful craftsmanship, premium
-              materials, and a minimalist aesthetic that adapts to modern
-              lifestyles.
+              Setiap koleksi dirancang dengan perhatian pada detail, pemilihan material yang berkualitas, serta siluet yang mampu mengikuti berbagai aktivitas tanpa mengurangi kenyamanan.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Rather than chasing trends, {name} focuses on creating
-              essentials that remain relevant season after season.
+              Lebih dari sekadar fashion, {name} hadir untuk menemani perjalanan perempuan modern yang aktif, percaya diri, dan menghargai kualitas dalam setiap pilihan.
             </p>
           </div>
         </div>

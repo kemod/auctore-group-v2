@@ -6,7 +6,7 @@ const contacts = [
   {
     icon: Mail,
     title: "Email",
-    value: "hello@auctoregroup.com",
+    value: "auctfits@gmail.com",
   },
   {
     icon: Phone,
@@ -16,7 +16,7 @@ const contacts = [
   {
     icon: MapPin,
     title: "Location",
-    value: "Jakarta, Indonesia",
+    value: "Cimahi, Indonesia",
   },
 ];
 
@@ -25,13 +25,13 @@ export default function ContactInfo() {
     <Section>
       <Container>
         <Heading
-          eyebrow="Contact Information"
+          eyebrow="Informasi Kontak"
           title={
             <>
-              Let's Connect.
+              Mari Terhubung.
             </>
           }
-          description="Reach us through the following channels."
+          description="Hubungi kami melalui salah satu media berikut. Kami siap membantu menjawab pertanyaan maupun mendiskusikan peluang kerja sama."
         />
 
         <div className="mt-20 grid gap-8 md:grid-cols-3">

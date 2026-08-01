@@ -8,12 +8,14 @@ interface BrandHeroProps {
   name: string;
   category: string;
   image: string;
+  description: string;
 }
 
 export default function BrandHero({
   name,
   category,
   image,
+  description,
 }: BrandHeroProps) {
   return (
     <Section className="overflow-hidden pt-44 pb-36">
@@ -21,6 +23,8 @@ export default function BrandHero({
 
       <Container>
         <div className="grid items-center gap-20 lg:grid-cols-[1fr_560px]">
+          {/* Left */}
+
           <div className="max-w-xl">
             <span className="inline-flex rounded-full border border-stone-200 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-neutral-600">
               {category}
@@ -31,8 +35,7 @@ export default function BrandHero({
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              Designed with timeless aesthetics, premium quality,
-              and thoughtful craftsmanship for modern living.
+              {description}
             </p>
 
             <div className="mt-12">
@@ -40,12 +43,14 @@ export default function BrandHero({
                 href="/contact"
                 className="inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-neutral-800"
               >
-                Contact Us
+                Hubungi Kami
 
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>
+
+          {/* Right */}
 
           <div className="overflow-hidden rounded-[36px] border border-neutral-200 shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
             <Image

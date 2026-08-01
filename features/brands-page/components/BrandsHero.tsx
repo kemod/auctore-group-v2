@@ -15,21 +15,19 @@ export default function BrandsHero() {
 
           <div className="max-w-xl">
             <span className="inline-flex items-center rounded-full border border-stone-200 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-neutral-600 shadow-sm">
-              Our Brands
+              Brand Kami
             </span>
 
             <h1 className="mt-8 font-playfair text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-neutral-900 md:text-6xl xl:text-7xl">
-              Crafting
+              Membangun
               <br />
-              Brands With
+              Brand Dengan
               <br />
-              Purpose.
+              Tujuan.
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              Every brand within Auctore Group is created with a distinct
-              identity while sharing the same commitment to quality,
-              craftsmanship, and timeless design.
+             Setiap brand di bawah Auctore Group dibangun dengan identitas yang berbeda, namun memiliki komitmen yang sama terhadap kualitas, inovasi, dan pertumbuhan jangka panjang.
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4">
@@ -37,7 +35,7 @@ export default function BrandsHero() {
                 href="/contact"
                 className="inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-neutral-800"
               >
-                Contact Us
+                Hubungi Kami
 
                 <ArrowRight className="h-4 w-4" />
               </Link>

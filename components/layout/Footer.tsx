@@ -4,19 +4,37 @@ import { Container } from "@/components/common";
 
 const navigation = [
   {
-    title: "Company",
+    title: "Perusahaan",
     links: [
-      { label: "Home", href: "/" },
-      { label: "About", href: "/about" },
-      { label: "Brands", href: "/brands" },
-      { label: "Contact", href: "/contact" },
+      {
+        label: "Beranda",
+        href: "/",
+      },
+      {
+        label: "Tentang Kami",
+        href: "/about",
+      },
+      {
+        label: "Brand",
+        href: "/brands",
+      },
+      {
+        label: "Kontak",
+        href: "/contact",
+      },
     ],
   },
   {
-    title: "Brands",
+    title: "Brand",
     links: [
-      { label: "Jenn Aira", href: "/brands/jenn-aira" },
-      { label: "Auctfits", href: "/brands/auctfits" },
+      {
+        label: "Jenn Aira",
+        href: "/brands/jenn-aira",
+      },
+      {
+        label: "Auctfits",
+        href: "/brands/auctfits",
+      },
     ],
   },
 ];
@@ -34,16 +52,17 @@ export default function Footer() {
             </h2>
 
             <p className="mt-2 text-xs uppercase tracking-[0.35em] text-neutral-500">
-              Group
+              GROUP
             </p>
 
             <p className="mt-8 max-w-md leading-8 text-neutral-600">
-              Building timeless fashion brands through thoughtful
-              craftsmanship, innovation, and long-term vision.
+              Membangun berbagai brand fashion yang mengedepankan kualitas,
+              inovasi, dan visi jangka panjang untuk menghadirkan nilai yang
+              berkelanjutan bagi setiap pelanggan.
             </p>
           </div>
 
-          {/* Company */}
+          {/* Navigation */}
 
           {navigation.map((section) => (
             <div key={section.title}>
@@ -69,11 +88,11 @@ export default function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-neutral-200 py-8 text-sm text-neutral-500 md:flex-row">
           <p>
-            © {new Date().getFullYear()} Auctore Group. All rights
-            reserved.
+            © {new Date().getFullYear()} Auctore Group. Seluruh hak cipta
+            dilindungi.
           </p>
 
-          <p>Designed & Developed by Auctore Group.</p>
+          <p>Didesain dan dikembangkan oleh Auctore Group.</p>
         </div>
       </Container>
     </footer>

@@ -5,9 +5,9 @@ import BrandCard from "./BrandCard";
 const brands = [
   {
     name: "Jenn Aira",
-    category: "Women's Fashion",
+    category: "Fashion Wanita",
     description:
-      "Timeless women's fashion inspired by elegance, confidence, and modern everyday living.",
+      "Menghadirkan fashion wanita dengan desain yang elegan, berkualitas, dan tetap relevan untuk berbagai momen dalam kehidupan sehari-hari.",
     image: "/images/brands/jenn-aira.webp",
     href: "/brands/jenn-aira",
   },
@@ -15,7 +15,7 @@ const brands = [
     name: "Auctfits",
     category: "Everyday Essentials",
     description:
-      "Modern essentials designed for comfort, quality, and effortless everyday style.",
+      "Menyediakan fashion esensial yang menggabungkan kenyamanan, kualitas, dan desain modern untuk menunjang aktivitas sehari-hari.",
     image: "/images/brands/auctfits.webp",
     href: "/brands/auctfits",
   },
@@ -26,15 +26,15 @@ export default function BrandGrid() {
     <Section background="stone">
       <Container>
         <Heading
-          eyebrow="Brand Portfolio"
+          eyebrow="Portofolio Brand"
           title={
             <>
-              Discover Our
+              Kenali Seluruh
               <br />
-              Collection of Brands.
+              Brand Kami.
             </>
           }
-          description="Each brand under Auctore Group has its own unique identity while sharing the same commitment to craftsmanship, innovation, and timeless value."
+          description="Setiap brand dirancang untuk menjawab kebutuhan yang berbeda, namun tetap membawa nilai dan standar kualitas yang menjadi ciri khas Auctore Group."
         />
 
         <div className="mt-20 grid gap-10 lg:grid-cols-2">

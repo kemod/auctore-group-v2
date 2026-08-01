@@ -23,30 +23,25 @@ export default function Story() {
 
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-500">
-              Our Story
+              Cerita Kami
             </p>
 
             <h2 className="mt-6 font-playfair text-5xl font-bold leading-tight text-neutral-900">
-              Creating Fashion
+              Menghadirkan Fashion
               <br />
-              With Purpose.
+              Dengan Tujuan.
             </h2>
 
             <p className="mt-8 text-lg leading-8 text-neutral-600">
-              Auctore Group was founded with a simple vision: create fashion
-              brands that stand the test of time.
+              Auctore Group didirikan dengan keyakinan bahwa sebuah brand bukan hanya tentang produk, tetapi juga tentang membangun identitas, kepercayaan, dan nilai yang bertahan lama.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Every brand we develop is built on quality craftsmanship,
-              thoughtful innovation, and a long-term commitment to delivering
-              meaningful value for customers.
+             Setiap brand yang kami kembangkan lahir melalui proses yang matang, mulai dari desain, pemilihan material, hingga pengalaman yang dirasakan oleh pelanggan.
             </p>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Rather than following short-lived trends, we focus on creating
-              brands that continue to evolve while maintaining a clear identity
-              and lasting relevance.
+              Kami percaya bahwa pertumbuhan yang berkelanjutan berasal dari konsistensi dalam menjaga kualitas serta keberanian untuk terus berinovasi.
             </p>
           </div>
         </div>

@@ -8,12 +8,12 @@ export default function ContactForm() {
           eyebrow="Send Message"
           title={
             <>
-              We'd Love
+              Kami Siap
               <br />
-              To Hear From You.
+              Mendengar Anda.
             </>
           }
-          description="Have a question, partnership opportunity, or business inquiry? Fill out the form below and we'll get back to you."
+          description="Memiliki pertanyaan, ingin menjalin kerja sama, atau mendiskusikan peluang bisnis? Isi formulir di bawah ini dan tim kami akan segera menghubungi Anda."
         />
 
         <form
@@ -23,7 +23,7 @@ export default function ContactForm() {
           <div className="grid gap-8 md:grid-cols-2">
             <div>
               <label className="mb-3 block text-sm font-medium text-neutral-700">
-                Full Name
+                Nama Lengkap
               </label>
 
               <input
@@ -48,24 +48,24 @@ export default function ContactForm() {
 
           <div className="mt-8">
             <label className="mb-3 block text-sm font-medium text-neutral-700">
-              Subject
+              Subjek
             </label>
 
             <input
               type="text"
-              placeholder="Business Inquiry"
+              placeholder="Masukkan subjek"
               className="h-14 w-full rounded-2xl border border-neutral-300 px-5 outline-none transition focus:border-black"
             />
           </div>
 
           <div className="mt-8">
             <label className="mb-3 block text-sm font-medium text-neutral-700">
-              Message
+              Pesan
             </label>
 
             <textarea
               rows={7}
-              placeholder="Write your message..."
+              placeholder="Tuliskan pesan Anda..."
               className="w-full rounded-2xl border border-neutral-300 px-5 py-4 outline-none transition focus:border-black"
             />
           </div>
@@ -74,7 +74,7 @@ export default function ContactForm() {
             type="submit"
             className="mt-10 inline-flex h-14 items-center rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-neutral-800"
           >
-            Send Message
+            Kirim Pesan
           </button>
         </form>
       </Container>

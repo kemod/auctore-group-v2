@@ -1,18 +1,18 @@
 export const navigation = [
   {
-    label: "Home",
+    label: "Beranda",
     href: "/",
   },
   {
-    label: "About",
+    label: "Tentang Kami",
     href: "/about",
   },
   {
-    label: "Brands",
+    label: "Brand",
     href: "/brands",
   },
   {
-    label: "Contact",
+    label: "Kontak",
     href: "/contact",
   },
-] as const;
+];

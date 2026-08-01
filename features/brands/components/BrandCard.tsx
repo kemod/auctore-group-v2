@@ -32,7 +32,7 @@ export default function BrandCard({
 
         <div className="absolute bottom-8 left-8 right-8 text-white">
           <p className="text-xs uppercase tracking-[0.3em] opacity-80">
-            Fashion Brand
+            Brand Fashion
           </p>
 
           <h3 className="mt-3 font-playfair text-4xl font-bold">

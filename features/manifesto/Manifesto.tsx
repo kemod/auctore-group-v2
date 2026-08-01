@@ -4,24 +4,24 @@ import ManifestoCard from "./components/ManifestoCard";
 
 const values = [
   {
-    title: "Quality",
+    title: "Kualitas",
     description:
-      "Every product is crafted with premium materials, attention to detail, and uncompromising standards.",
+      "Setiap produk dibuat dengan perhatian terhadap detail, menggunakan material terbaik, dan standar kualitas yang tinggi.",
   },
   {
-    title: "Innovation",
+    title: "Inovasi",
     description:
-      "We continuously evolve through thoughtful ideas, modern technology, and customer insight.",
+      "Kami terus mengembangkan setiap brand melalui ide-ide baru, strategi modern, dan proses yang berkelanjutan.",
   },
   {
     title: "Timeless",
     description:
-      "We create brands designed to stay relevant beyond trends and changing seasons.",
+      "Kami menciptakan produk yang tetap relevan, melampaui tren sesaat dan dapat digunakan dalam berbagai waktu.",
   },
   {
-    title: "Customer First",
+    title: "Pelanggan Adalah Prioritas",
     description:
-      "Building trust and long-term relationships with customers is at the heart of every decision.",
+      "Kepercayaan pelanggan menjadi dasar dalam setiap keputusan yang kami ambil untuk membangun hubungan jangka panjang.",
   },
 ];
 
@@ -30,15 +30,15 @@ export default function Manifesto() {
     <Section>
       <Container>
         <Heading
-          eyebrow="Our Manifesto"
+          eyebrow="Manifesto Kami"
           title={
             <>
-              We Build Brands
+              Kami Membangun
               <br />
-              With Purpose.
+              Brand Dengan Tujuan.
             </>
           }
-          description="Every decision we make is guided by quality, innovation, timeless design, and a commitment to creating lasting value."
+          description="Setiap keputusan yang kami ambil berlandaskan kualitas, inovasi, desain yang timeless, serta komitmen untuk menciptakan nilai jangka panjang bagi pelanggan."
         />
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">

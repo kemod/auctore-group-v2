@@ -4,24 +4,24 @@ import ManifestoCard from "@/features/manifesto/components/ManifestoCard";
 
 const values = [
   {
-    title: "Quality",
+    title: "Kualitas",
     description:
-      "We believe every detail matters, from design to craftsmanship and customer experience.",
+      "Kami percaya bahwa kualitas adalah fondasi utama dalam menciptakan produk yang mampu memberikan kepuasan dan kepercayaan pelanggan.",
   },
   {
-    title: "Innovation",
+    title: "Inovasi",
     description:
-      "We embrace continuous improvement to create brands that remain relevant in a changing world.",
+      "Kami terus menghadirkan ide dan pendekatan baru agar setiap brand mampu berkembang mengikuti kebutuhan pasar.",
   },
   {
     title: "Timeless",
     description:
-      "Our brands are built to outlast trends and deliver lasting value across generations.",
+      "Kami menciptakan produk yang tetap relevan dan bernilai, melampaui perubahan tren dari waktu ke waktu.",
   },
   {
-    title: "Customer First",
+    title: "Pelanggan Adalah Prioritas",
     description:
-      "Every decision starts with understanding and creating value for our customers.",
+      "Setiap keputusan yang kami ambil berorientasi pada pengalaman terbaik dan hubungan jangka panjang dengan pelanggan.",
   },
 ];
 
@@ -30,15 +30,15 @@ export default function Values() {
     <Section>
       <Container>
         <Heading
-          eyebrow="Core Values"
+          eyebrow="Nilai-Nilai Kami"
           title={
             <>
-              The Principles
+              Prinsip Yang
               <br />
-              That Guide Us.
+              Menjadi Pedoman Kami.
             </>
           }
-          description="Our values shape every brand we build and every decision we make."
+          description="Nilai-nilai ini menjadi landasan dalam membangun setiap brand dan mengambil setiap keputusan di Auctore Group."
         />
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">

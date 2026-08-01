@@ -12,8 +12,11 @@ export default function BrandDetail({
   category,
   heroImage,
   storyImage,
-  gallery,
+  description,
   collections,
+  gallery,
+  galleryTitle,
+  galleryDescription,
 }: BrandDetailProps) {
   return (
     <>
@@ -21,6 +24,7 @@ export default function BrandDetail({
         name={name}
         category={category}
         image={heroImage}
+        description={description}
       />
 
       <BrandStory
@@ -30,7 +34,11 @@ export default function BrandDetail({
 
       <Collections collections={collections} />
 
-      <Gallery images={gallery} />
+      <Gallery
+        images={gallery}
+        title={galleryTitle}
+        description={galleryDescription}
+      />
 
       <CTA />
     </>

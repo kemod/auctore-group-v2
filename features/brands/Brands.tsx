@@ -6,14 +6,14 @@ const brands = [
   {
     name: "Jenn Aira",
     description:
-      "Modern women's fashion focused on elegance, versatility, and timeless everyday style.",
+      "Menghadirkan fashion wanita dengan desain yang elegan, berkualitas, dan tetap relevan di setiap waktu.",
     image: "/images/brand/jenn-aira-logo.jpg",
     href: "/brands/jenn-aira",
   },
   {
     name: "Auctfits",
     description:
-      "Essential fashion designed for comfort, quality, and contemporary living.",
+      "Menyediakan fashion esensial yang menggabungkan kenyamanan, kualitas, dan gaya modern untuk aktivitas sehari-hari.",
     image: "/images/brand/auctore-logo.png",
     href: "/brands/auctfits",
   },
@@ -24,15 +24,15 @@ export default function Brands() {
     <Section background="stone">
       <Container>
         <Heading
-          eyebrow="Our Brands"
+          eyebrow="Brand Kami"
           title={
             <>
-              A Portfolio
+              Portofolio Brand
               <br />
-              Built For The Future.
+              Untuk Masa Depan.
             </>
           }
-          description="Each brand under Auctore Group is built with a unique identity while sharing the same commitment to quality, innovation, and long-term growth."
+          description="Setiap brand di bawah Auctore Group memiliki identitas yang berbeda, namun disatukan oleh komitmen yang sama terhadap kualitas, inovasi, dan pertumbuhan jangka panjang."
         />
 
         <div className="mt-20 grid gap-10 lg:grid-cols-2">

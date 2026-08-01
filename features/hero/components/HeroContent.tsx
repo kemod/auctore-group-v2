@@ -9,17 +9,15 @@ export default function HeroContent() {
       </span>
 
       <h1 className="mt-8 font-playfair text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-neutral-900 md:text-6xl xl:text-7xl">
-        Building
+        Membangun
         <br />
-        The Future of
+        Masa Depan
         <br />
-        Fashion Brands.
+        Brand Fashion.
       </h1>
 
       <p className="mt-8 text-lg leading-8 text-neutral-600">
-        Auctore Group develops timeless fashion brands through exceptional
-        craftsmanship, thoughtful innovation, and a long-term vision that
-        shapes modern lifestyle businesses.
+        Auctore Group mengembangkan berbagai brand fashion yang mengutamakan kualitas, inovasi, dan craftsmanship untuk menghadirkan produk yang relevan bagi gaya hidup modern.
       </p>
 
       <div className="mt-12 flex flex-wrap gap-4">
@@ -36,7 +34,7 @@ export default function HeroContent() {
           href="/about"
           className="inline-flex h-14 items-center rounded-full border border-neutral-300 px-8 text-sm font-medium transition hover:border-black hover:bg-neutral-50"
         >
-          Our Story
+          Tentang Kami
         </Link>
       </div>
     </div>

@@ -13,15 +13,15 @@ export default function Collections({
     <Section background="stone">
       <Container>
         <Heading
-          eyebrow="Collections"
+          eyebrow="Koleksi"
           title={
             <>
-              Crafted For
+              Dirancang Untuk
               <br />
-              Every Occasion.
+              Setiap Momen.
             </>
           }
-          description="Every collection is thoughtfully designed to deliver versatility, comfort, and timeless appeal."
+          description="Setiap koleksi dikembangkan untuk menghadirkan keseimbangan antara gaya, kenyamanan, dan kualitas sehingga dapat digunakan dalam berbagai aktivitas."
         />
 
         <div className="mt-20 grid gap-8 lg:grid-cols-3">

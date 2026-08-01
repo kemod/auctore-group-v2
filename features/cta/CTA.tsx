@@ -15,18 +15,17 @@ export default function CTA() {
 
           <div className="relative mx-auto max-w-4xl text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-400">
-              Let's Build Together
+              Mari Berkembang Bersama
             </p>
 
             <h2 className="mt-8 font-playfair text-5xl font-bold leading-tight text-white md:text-6xl">
-              Building Fashion Brands
+              Membangun Brand Fashion
               <br />
-              That Last.
+              Yang Bertahan Lama.
             </h2>
 
             <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-neutral-400">
-              Whether you're exploring our portfolio or looking for future
-              collaborations, we'd love to hear from you.
+              Baik Anda ingin mengenal brand kami lebih jauh maupun menjalin kolaborasi, kami siap berdiskusi untuk menciptakan peluang baru bersama.
             </p>
 
             <div className="mt-12 flex flex-wrap items-center justify-center gap-5">
@@ -43,7 +42,7 @@ export default function CTA() {
                 href="/contact"
                 className="inline-flex h-14 items-center rounded-full border border-white/20 px-8 text-sm font-medium text-white transition hover:border-white hover:bg-white/5"
               >
-                Contact Us
+                Hubungi Kami
               </Link>
             </div>
           </div>

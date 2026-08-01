@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface Collection {
   title: string;
   description: string;
@@ -10,7 +12,12 @@ export interface BrandDetailProps {
   heroImage: string;
   storyImage: string;
 
-  gallery: string[];
+  description: string;
 
   collections: Collection[];
+
+  gallery: string[];
+
+  galleryTitle: ReactNode;
+  galleryDescription: string;
 }

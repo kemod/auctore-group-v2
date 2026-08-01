@@ -4,28 +4,28 @@ import JourneyItem from "./components/JourneyItem";
 
 const timeline = [
   {
-    year: "2024",
-    title: "The Beginning",
+    year: "2025",
+    title: "Awal Perjalanan",
     description:
-      "Auctore Group was established with the ambition to build timeless fashion brands.",
+      "Auctore Group didirikan dengan visi membangun brand fashion Indonesia yang memiliki kualitas dan nilai jangka panjang.",
   },
   {
     year: "2025",
-    title: "First Brand Launch",
+    title: "Brand Pertama Diluncurkan",
     description:
-      "Jenn Aira was introduced as our first lifestyle fashion brand.",
+      "Jenn Aira hadir sebagai langkah awal dalam menghadirkan fashion modern dengan kualitas terbaik.",
   },
   {
     year: "2026",
     title: "Brand Expansion",
     description:
-      "Auctfits joined the portfolio to strengthen our everyday essentials category.",
+      "Auctfits bergabung untuk melengkapi Auctore Group dengan fokus pada kebutuhan fashion sehari-hari.",
   },
   {
-    year: "Future",
+    year: "Visi Masa Depan",
     title: "Global Vision",
     description:
-      "Expanding internationally while continuing to create brands with lasting value.",
+      "Terus menghadirkan brand-brand baru dan memperluas jangkauan Auctore Group ke pasar yang lebih luas.",
   },
 ];
 
@@ -34,15 +34,15 @@ export default function Journey() {
     <Section>
       <Container>
         <Heading
-          eyebrow="Our Journey"
+          eyebrow="Perjalanan Kami"
           title={
             <>
-              Growing With
+              Bertumbuh Dengan
               <br />
-              Long-Term Vision.
+              Visi Jangka Panjang.
             </>
           }
-          description="Every milestone reflects our commitment to building sustainable fashion businesses that continue to evolve."
+          description="Setiap langkah yang kami ambil merupakan bagian dari komitmen untuk membangun brand fashion yang terus berkembang dan memberikan nilai yang berkelanjutan."
         />
 
         <div className="relative mt-24">

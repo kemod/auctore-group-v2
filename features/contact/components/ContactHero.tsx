@@ -21,8 +21,7 @@ export default function ContactHero() {
           </h1>
 
           <p className="mt-8 text-lg leading-8 text-neutral-600">
-            We'd love to hear from you. Whether it's a partnership,
-            business inquiry, or simply getting to know Auctore Group.
+            Kami selalu terbuka untuk berbagai bentuk kerja sama, pertanyaan, maupun peluang bisnis. Jangan ragu untuk menghubungi kami.
           </p>
 
           <div className="mt-12">
@@ -30,7 +29,7 @@ export default function ContactHero() {
               href="#contact-form"
               className="inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition hover:bg-neutral-800"
             >
-              Get In Touch
+              Hubungi Kami
 
               <ArrowRight className="h-4 w-4" />
             </Link>
