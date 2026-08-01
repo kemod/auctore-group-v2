@@ -55,7 +55,7 @@ export default function AboutHero() {
 
             <div className="overflow-hidden rounded-[36px] border border-neutral-200 bg-white shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
               <img
-                src="/images/about/about-hero.webp"
+                src="/images/about/about-hero.png"
                 alt="About Auctore"
                 className="aspect-[4/5] w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
               />

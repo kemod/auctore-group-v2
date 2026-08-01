@@ -7,14 +7,14 @@ const brands = [
     name: "Jenn Aira",
     description:
       "Menghadirkan fashion wanita dengan desain yang elegan, berkualitas, dan tetap relevan di setiap waktu.",
-    image: "/images/brand/jenn-aira-logo.jpg",
+    image: "/images/brand/jenn-aira-logo.png",
     href: "/brands/jenn-aira",
   },
   {
     name: "Auctfits",
     description:
       "Menyediakan fashion esensial yang menggabungkan kenyamanan, kualitas, dan gaya modern untuk aktivitas sehari-hari.",
-    image: "/images/brand/auctore-logo.png",
+    image: "/images/brand/auctore-logo-o.png",
     href: "/brands/auctfits",
   },
 ];

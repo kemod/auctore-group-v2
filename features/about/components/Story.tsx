@@ -11,7 +11,7 @@ export default function Story() {
 
           <div className="overflow-hidden rounded-[36px] border border-neutral-200 bg-white shadow-lg">
             <Image
-              src="/images/about/story.webp"
+              src="/images/about/story.png"
               alt="Our Story"
               width={900}
               height={1100}

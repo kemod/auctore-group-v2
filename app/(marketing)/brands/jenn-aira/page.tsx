@@ -22,8 +22,8 @@ export default function JennAiraPage() {
     <BrandDetail
       name="Jenn Aira"
       category="Fashion Wanita"
-      heroImage="/images/brands/jenn-aira/hero.webp"
-      storyImage="/images/brands/jenn-aira/story.webp"
+      heroImage="/images/brands/jenn-aira/jenn-aira-hero.png"
+      storyImage="/images/brands/jenn-aira/story.png"
       description="Jenn Aira menghadirkan fashion wanita yang memadukan desain elegan, kualitas premium, dan kenyamanan untuk menemani setiap momen dalam kehidupan sehari-hari."
       collections={[
         {
@@ -43,10 +43,10 @@ export default function JennAiraPage() {
         },
       ]}
       gallery={[
-        "/images/brands/jenn-aira/gallery-1.webp",
-        "/images/brands/jenn-aira/gallery-2.webp",
-        "/images/brands/jenn-aira/gallery-3.webp",
-        "/images/brands/jenn-aira/gallery-4.webp",
+        "/images/brands/jenn-aira/gallery-1.png",
+        "/images/brands/jenn-aira/gallery-2.png",
+        "/images/brands/jenn-aira/gallery-3.png",
+        "/images/brands/jenn-aira/gallery-4.png",
       ]}
       galleryTitle={
         <>

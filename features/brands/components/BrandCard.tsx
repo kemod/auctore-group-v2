@@ -25,6 +25,7 @@ export default function BrandCard({
           src={image}
           alt={name}
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
@@ -44,7 +45,7 @@ export default function BrandCard({
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2 text-sm font-medium">
-            Explore Brand
+            Lihat Brand
 
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </div>

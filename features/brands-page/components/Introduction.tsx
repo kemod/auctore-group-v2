@@ -9,7 +9,7 @@ export default function Introduction() {
         <div className="grid items-center gap-20 lg:grid-cols-[560px_1fr]">
           <div className="overflow-hidden rounded-[36px] border border-neutral-200 shadow-lg">
             <Image
-              src="/images/brands/introduction.webp"
+              src="/images/brands/auctfits/auctore-logo-o.png"
               alt="Brand Portfolio"
               width={900}
               height={1100}

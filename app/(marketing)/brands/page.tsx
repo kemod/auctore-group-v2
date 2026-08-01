@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import Brands from "@/features/brands";
+import { Brands } from "@/features/brands";
 
 export const metadata: Metadata = {
   title: "Brand Kami",

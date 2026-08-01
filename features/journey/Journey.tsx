@@ -17,13 +17,13 @@ const timeline = [
   },
   {
     year: "2026",
-    title: "Brand Expansion",
+    title: "Ekspansi Brand",
     description:
       "Auctfits bergabung untuk melengkapi Auctore Group dengan fokus pada kebutuhan fashion sehari-hari.",
   },
   {
     year: "Visi Masa Depan",
-    title: "Global Vision",
+    title: "Visi Global",
     description:
       "Terus menghadirkan brand-brand baru dan memperluas jangkauan Auctore Group ke pasar yang lebih luas.",
   },
@@ -49,8 +49,11 @@ export default function Journey() {
           <div className="absolute left-5 top-0 h-full w-px bg-neutral-200" />
 
           <div className="space-y-16">
-            {timeline.map((item) => (
-              <JourneyItem key={item.year} {...item} />
+            {timeline.map((item, index) => (
+              <JourneyItem
+                key={`${item.year}-${item.title}-${index}`}
+                {...item}
+              />
             ))}
           </div>
         </div>

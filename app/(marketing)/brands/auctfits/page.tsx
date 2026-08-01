@@ -22,8 +22,8 @@ export default function AuctfitsPage() {
     <BrandDetail
       name="Auctfits"
       category="Fashion Esensial"
-      heroImage="/images/brands/auctfits/hero.webp"
-      storyImage="/images/brands/auctfits/story.webp"
+      heroImage="/images/brands/auctfits/hero.png"
+      storyImage="/images/brands/auctfits/storyy.png"
       description="Auctfits menghadirkan fashion esensial yang mengutamakan kenyamanan, kualitas, dan desain modern untuk mendukung gaya hidup aktif setiap hari."
       collections={[
         {
@@ -43,10 +43,10 @@ export default function AuctfitsPage() {
         },
       ]}
       gallery={[
-        "/images/brands/auctfits/gallery-1.webp",
-        "/images/brands/auctfits/gallery-2.webp",
-        "/images/brands/auctfits/gallery-3.webp",
-        "/images/brands/auctfits/gallery-4.webp",
+        "/images/brands/auctfits/gallery-1.png",
+        "/images/brands/auctfits/gallery-2.png",
+        "/images/brands/auctfits/gallery-3.png",
+        "/images/brands/auctfits/gallery-4.png",
       ]}
       galleryTitle={
         <>

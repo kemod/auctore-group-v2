@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { inter, playfair } from "@/config";
-import { AppProviders } from "@/providers";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://auctoregroup.com"),
@@ -56,11 +55,8 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-
     locale: "id_ID",
-
     url: "https://auctoregroup.com",
-
     siteName: "Auctore Group",
 
     title: "Auctore Group",
@@ -71,11 +67,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/images/seo/og-image.jpg",
-
         width: 1200,
-
         height: 630,
-
         alt: "Auctore Group",
       },
     ],
@@ -93,12 +86,27 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      {
+        url: "/favicon.ico",
+      },
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+    ],
 
     shortcut: "/favicon.ico",
 
     apple: "/apple-touch-icon.png",
   },
+
+  manifest: "/site.webmanifest",
 };
 
 interface RootLayoutProps {
@@ -115,7 +123,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background font-sans text-foreground antialiased">
-        <AppProviders>{children}</AppProviders>
+        {children}
       </body>
     </html>
   );

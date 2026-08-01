@@ -164,7 +164,7 @@ export default function Navbar() {
                 href="/contact"
                 className="mt-8 inline-flex h-12 items-center justify-center rounded-full bg-black text-white"
               >
-                Contact Us
+                Hubungi Kami
               </Link>
             </nav>
           </aside>
