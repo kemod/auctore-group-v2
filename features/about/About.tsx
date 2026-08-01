@@ -1,3 +1,4 @@
+import { FadeUp } from "@/components/motion";
 import { CTA } from "@/features/cta";
 
 import AboutHero from "./components/AboutHero";
@@ -9,17 +10,29 @@ import Timeline from "./components/Timeline";
 export default function About() {
   return (
     <>
-      <AboutHero />
+      <FadeUp>
+        <AboutHero />
+      </FadeUp>
 
-      <Story />
+      <FadeUp delay={0.1}>
+        <Story />
+      </FadeUp>
 
-      <VisionMission />
+      <FadeUp delay={0.15}>
+        <VisionMission />
+      </FadeUp>
 
-      <Values />
+      <FadeUp delay={0.2}>
+        <Values />
+      </FadeUp>
 
-      <Timeline />
+      <FadeUp delay={0.25}>
+        <Timeline />
+      </FadeUp>
 
-      <CTA />
+      <FadeUp delay={0.3}>
+        <CTA />
+      </FadeUp>
     </>
   );
 }

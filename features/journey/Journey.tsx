@@ -1,4 +1,5 @@
 import { Container, Heading, Section } from "@/components/common";
+import { FadeUp } from "@/components/motion";
 
 import JourneyItem from "./components/JourneyItem";
 
@@ -33,27 +34,31 @@ export default function Journey() {
   return (
     <Section>
       <Container>
-        <Heading
-          eyebrow="Perjalanan Kami"
-          title={
-            <>
-              Bertumbuh Dengan
-              <br />
-              Visi Jangka Panjang.
-            </>
-          }
-          description="Setiap langkah yang kami ambil merupakan bagian dari komitmen untuk membangun brand fashion yang terus berkembang dan memberikan nilai yang berkelanjutan."
-        />
+        <FadeUp>
+          <Heading
+            eyebrow="Perjalanan Kami"
+            title={
+              <>
+                Bertumbuh Dengan
+                <br />
+                Visi Jangka Panjang.
+              </>
+            }
+            description="Setiap langkah yang kami ambil merupakan bagian dari komitmen untuk membangun brand fashion yang terus berkembang dan memberikan nilai yang berkelanjutan."
+          />
+        </FadeUp>
 
         <div className="relative mt-24">
           <div className="absolute left-5 top-0 h-full w-px bg-neutral-200" />
 
           <div className="space-y-16">
             {timeline.map((item, index) => (
-              <JourneyItem
+              <FadeUp
                 key={`${item.year}-${item.title}-${index}`}
-                {...item}
-              />
+                delay={index * 0.12}
+              >
+                <JourneyItem {...item} />
+              </FadeUp>
             ))}
           </div>
         </div>

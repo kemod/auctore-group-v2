@@ -1,4 +1,5 @@
 import { Container, Heading, Section } from "@/components/common";
+import { FadeUp } from "@/components/motion";
 
 import BrandCard from "./components/BrandCard";
 
@@ -23,21 +24,28 @@ export default function Brands() {
   return (
     <Section background="stone">
       <Container>
-        <Heading
-          eyebrow="Brand Kami"
-          title={
-            <>
-              Portofolio Brand
-              <br />
-              Untuk Masa Depan.
-            </>
-          }
-          description="Setiap brand di bawah Auctore Group memiliki identitas yang berbeda, namun disatukan oleh komitmen yang sama terhadap kualitas, inovasi, dan pertumbuhan jangka panjang."
-        />
+        <FadeUp>
+          <Heading
+            eyebrow="Brand Kami"
+            title={
+              <>
+                Portofolio Brand
+                <br />
+                Untuk Masa Depan.
+              </>
+            }
+            description="Setiap brand di bawah Auctore Group memiliki identitas yang berbeda, namun disatukan oleh komitmen yang sama terhadap kualitas, inovasi, dan pertumbuhan jangka panjang."
+          />
+        </FadeUp>
 
         <div className="mt-20 grid gap-10 lg:grid-cols-2">
-          {brands.map((brand) => (
-            <BrandCard key={brand.name} {...brand} />
+          {brands.map((brand, index) => (
+            <FadeUp
+              key={brand.name}
+              delay={index * 0.15}
+            >
+              <BrandCard {...brand} />
+            </FadeUp>
           ))}
         </div>
       </Container>

@@ -1,4 +1,5 @@
 import { Container, Section } from "@/components/common";
+import { FadeUp } from "@/components/motion";
 
 const data = [
   {
@@ -18,25 +19,27 @@ export default function VisionMission() {
     <Section background="stone">
       <Container>
         <div className="grid gap-8 lg:grid-cols-2">
-          {data.map((item) => (
-            <article
+          {data.map((item, index) => (
+            <FadeUp
               key={item.title}
-              className="group rounded-[36px] border border-neutral-200 bg-white p-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              delay={index * 0.15}
             >
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">
-                {item.title}
-              </span>
+              <article className="group rounded-[36px] border border-neutral-200 bg-white p-10 transition-all duration-500 hover:-translate-y-2 hover:border-neutral-300 hover:shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-neutral-500">
+                  {item.title}
+                </span>
 
-              <h2 className="mt-6 font-playfair text-4xl font-bold text-neutral-900">
-                {item.title === "Visi"
-                  ? "Membangun Brand Yang Bernilai"
-                  : "Bertumbuh Bersama Pelanggan."}
-              </h2>
+                <h2 className="mt-6 font-playfair text-4xl font-bold leading-tight text-neutral-900">
+                  {item.title === "Visi"
+                    ? "Membangun Brand Yang Bernilai"
+                    : "Bertumbuh Bersama Pelanggan."}
+                </h2>
 
-              <p className="mt-8 leading-8 text-neutral-600">
-                {item.description}
-              </p>
-            </article>
+                <p className="mt-8 leading-8 text-neutral-600">
+                  {item.description}
+                </p>
+              </article>
+            </FadeUp>
           ))}
         </div>
       </Container>

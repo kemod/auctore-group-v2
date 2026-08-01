@@ -1,4 +1,9 @@
 import { Container, Section } from "@/components/common";
+import {
+  AnimatedImage,
+  FadeUp,
+  Parallax,
+} from "@/components/motion";
 
 import HeroContent from "./components/HeroContent";
 import HeroImage from "./components/HeroImage";
@@ -10,11 +15,18 @@ export default function Hero() {
 
       <Container>
         <div className="grid items-center gap-24 lg:grid-cols-[1fr_560px]">
-          <HeroContent />
+          <FadeUp>
+            <HeroContent />
+          </FadeUp>
 
-          <div className="justify-self-end">
-            <HeroImage />
-          </div>
+          <Parallax
+            offset={35}
+            className="justify-self-end"
+          >
+            <AnimatedImage>
+              <HeroImage />
+            </AnimatedImage>
+          </Parallax>
         </div>
       </Container>
     </Section>

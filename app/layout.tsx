@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { inter, playfair } from "@/config";
+import { PageTransition } from "@/components/transition";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://auctoregroup.com"),
@@ -58,12 +60,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     url: "https://auctoregroup.com",
     siteName: "Auctore Group",
-
     title: "Auctore Group",
-
     description:
       "Membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
-
     images: [
       {
         url: "/images/seo/og-image.jpg",
@@ -76,12 +75,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "Auctore Group",
-
     description:
       "Membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
-
     images: ["/images/seo/og-image.jpg"],
   },
 
@@ -123,7 +119,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background font-sans text-foreground antialiased">
-        {children}
+        <ScrollProgress />
+
+        <PageTransition>
+          {children}
+        </PageTransition>
       </body>
     </html>
   );

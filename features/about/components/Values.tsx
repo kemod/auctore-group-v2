@@ -1,4 +1,5 @@
 import { Container, Heading, Section } from "@/components/common";
+import { FadeUp } from "@/components/motion";
 
 import ManifestoCard from "@/features/manifesto/components/ManifestoCard";
 
@@ -29,25 +30,31 @@ export default function Values() {
   return (
     <Section>
       <Container>
-        <Heading
-          eyebrow="Nilai-Nilai Kami"
-          title={
-            <>
-              Prinsip Yang
-              <br />
-              Menjadi Pedoman Kami.
-            </>
-          }
-          description="Nilai-nilai ini menjadi landasan dalam membangun setiap brand dan mengambil setiap keputusan di Auctore Group."
-        />
+        <FadeUp>
+          <Heading
+            eyebrow="Nilai-Nilai Kami"
+            title={
+              <>
+                Prinsip Yang
+                <br />
+                Menjadi Pedoman Kami.
+              </>
+            }
+            description="Nilai-nilai ini menjadi landasan dalam membangun setiap brand dan mengambil setiap keputusan di Auctore Group."
+          />
+        </FadeUp>
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">
-          {values.map((value) => (
-            <ManifestoCard
+          {values.map((value, index) => (
+            <FadeUp
               key={value.title}
-              title={value.title}
-              description={value.description}
-            />
+              delay={index * 0.12}
+            >
+              <ManifestoCard
+                title={value.title}
+                description={value.description}
+              />
+            </FadeUp>
           ))}
         </div>
       </Container>
