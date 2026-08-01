@@ -1,22 +1,19 @@
 import { CTA } from "@/features/cta";
 
+import type { BrandDetailProps } from "./types";
+
 import BrandHero from "./components/BrandHero";
 import BrandStory from "./components/BrandStory";
 import Collections from "./components/Collections";
 import Gallery from "./components/Gallery";
-
-interface BrandDetailProps {
-  name: string;
-  category: string;
-  heroImage: string;
-  storyImage: string;
-}
 
 export default function BrandDetail({
   name,
   category,
   heroImage,
   storyImage,
+  gallery,
+  collections,
 }: BrandDetailProps) {
   return (
     <>
@@ -31,9 +28,9 @@ export default function BrandDetail({
         image={storyImage}
       />
 
-      <Collections />
+      <Collections collections={collections} />
 
-      <Gallery />
+      <Gallery images={gallery} />
 
       <CTA />
     </>

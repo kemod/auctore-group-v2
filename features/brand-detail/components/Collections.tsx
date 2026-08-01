@@ -1,24 +1,14 @@
 import { Container, Heading, Section } from "@/components/common";
 
-const collections = [
-  {
-    title: "Daily Essentials",
-    description:
-      "Comfortable wardrobe staples designed for everyday wear.",
-  },
-  {
-    title: "Modern Classics",
-    description:
-      "Timeless silhouettes with contemporary details and premium finishes.",
-  },
-  {
-    title: "Seasonal Collection",
-    description:
-      "Curated pieces inspired by the latest seasonal direction while maintaining a timeless identity.",
-  },
-];
+import type { Collection } from "../types";
 
-export default function Collections() {
+interface CollectionsProps {
+  collections: Collection[];
+}
+
+export default function Collections({
+  collections,
+}: CollectionsProps) {
   return (
     <Section background="stone">
       <Container>

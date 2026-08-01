@@ -2,14 +2,13 @@ import Image from "next/image";
 
 import { Container, Heading, Section } from "@/components/common";
 
-const images = [
-  "/images/brands/jenn-aira/gallery-1.webp",
-  "/images/brands/jenn-aira/gallery-2.webp",
-  "/images/brands/jenn-aira/gallery-3.webp",
-  "/images/brands/jenn-aira/gallery-4.webp",
-];
+interface GalleryProps {
+  images: string[];
+}
 
-export default function Gallery() {
+export default function Gallery({
+  images,
+}: GalleryProps) {
   return (
     <Section>
       <Container>
