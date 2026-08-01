@@ -1,5 +1,6 @@
 import { Hero } from "@/features/hero";
 import { Manifesto } from "@/features/manifesto";
+import { Brands } from "@/features/brands";
 
 export default function HomePage() {
   return (
@@ -7,6 +8,8 @@ export default function HomePage() {
       <Hero />
 
       <Manifesto />
+
+      <Brands />
     </>
   );
 }
