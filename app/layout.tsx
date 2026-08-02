@@ -3,6 +3,9 @@ import "./globals.css";
 
 import { inter, playfair } from "@/config";
 
+import OrganizationSchema from "@/components/seo/OrganizationSchema";
+import WebSiteSchema from "@/components/seo/WebSiteSchema";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://auctore-group.vercel.app"),
 
@@ -128,6 +131,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background font-sans text-foreground antialiased">
+        <OrganizationSchema />
+
+        <WebSiteSchema />
+
         {children}
       </body>
     </html>
