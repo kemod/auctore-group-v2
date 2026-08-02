@@ -19,9 +19,9 @@ export default function HeroContent() {
       </h1>
 
       <p className="mt-8 text-lg leading-8 text-neutral-600">
-        Auctore Group mengembangkan berbagai brand fashion yang
-        mengutamakan kualitas, inovasi, dan craftsmanship untuk
-        menghadirkan produk yang relevan bagi gaya hidup modern.
+        Auctore Group mengembangkan berbagai brand fashion yang mengutamakan
+        kualitas, inovasi, dan craftsmanship untuk menghadirkan produk yang
+        relevan bagi gaya hidup modern.
       </p>
 
       <div className="mt-12">
@@ -45,7 +45,9 @@ export default function HeroContent() {
             logo="/images/brand/jenn-aira-logo.png"
             brand="Jenn Aira"
             marketplace="Official Shopee Store"
-            href="https://id.shp.ee/fJ4RSuH"
+            marketplaceIcon="/icons/shopee.svg"
+            marketplaceHref=""
+            instagramHref=""
             hoverColor="hover:border-[#EE4D2D]"
           />
 
@@ -53,7 +55,9 @@ export default function HeroContent() {
             logo="/images/brand/auctore-logo.png"
             brand="Auctfits"
             marketplace="Official TikTok Shop"
-            href=" https://vt.tiktok.com/ZS9hBKYUuLsdV-T4slC/"
+            marketplaceIcon="/icons/tiktok.svg"
+            marketplaceHref=""
+            instagramHref=""
             hoverColor="hover:border-black"
           />
         </div>
