@@ -46,8 +46,8 @@ export default function HeroContent() {
             brand="Jenn Aira"
             marketplace="Official Shopee Store"
             marketplaceIcon="/icons/shopee.svg"
-            marketplaceHref=""
-            instagramHref=""
+            marketplaceHref="https://id.shp.ee/fJ4RSuH"
+            instagramHref="https://www.instagram.com/jenn_aira2025?igsh=MWMzcDd1bWRpbGp4bA=="
             hoverColor="hover:border-[#EE4D2D]"
           />
 
@@ -56,8 +56,8 @@ export default function HeroContent() {
             brand="Auctfits"
             marketplace="Official TikTok Shop"
             marketplaceIcon="/icons/tiktok.svg"
-            marketplaceHref=""
-            instagramHref=""
+            marketplaceHref=" https://vt.tiktok.com/ZS9hBKYUuLsdV-T4slC/"
+            instagramHref="https://www.instagram.com/auctstore?igsh=Y2R2czBxdGJydHFr"
             hoverColor="hover:border-black"
           />
         </div>
