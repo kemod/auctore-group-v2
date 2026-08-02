@@ -42,7 +42,7 @@ The project showcases the company's vision while introducing its fashion brands 
 
 > Homepage Preview
 
-<img src="./public/images/seo/og-image.jpg" alt="Auctore Group Preview"/>
+<img src="./public/images/seo/screenshot.png" alt="Auctore Group Preview"/>
 
 ---
 
