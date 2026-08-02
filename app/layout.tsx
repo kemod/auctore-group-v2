@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://auctore-group.vercel.app"),
 
   verification: {
-    google: "PASTE_GOOGLE_VERIFICATION_CODE_HERE",
+    google: "A7QYZHPp4pcue2SyyRP7vwCY_O85_nWxQ7FaiZNnbm4",
   },
 
   title: {
