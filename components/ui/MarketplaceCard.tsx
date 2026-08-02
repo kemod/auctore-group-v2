@@ -72,7 +72,7 @@ export default function MarketplaceCard({
         className="ml-5 rounded-xl p-2 transition hover:bg-neutral-100"
       >
         <Image
-          src="/icons/instagram.svg"
+          src="/icons/Instagram.svg"
           alt=""
           width={20}
           height={20}
