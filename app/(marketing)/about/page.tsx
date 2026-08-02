@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 import About from "@/features/about";
 
 export const metadata: Metadata = {
@@ -18,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  return <About />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://auctore-group.vercel.app",
+          },
+          {
+            name: "Tentang Kami",
+            url: "https://auctore-group.vercel.app/about",
+          },
+        ]}
+      />
+
+      <About />
+    </>
+  );
 }

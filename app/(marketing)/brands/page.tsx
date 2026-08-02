@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
 import { Brands } from "@/features/brands";
 
 export const metadata: Metadata = {
@@ -18,5 +18,22 @@ export const metadata: Metadata = {
 };
 
 export default function BrandsPage() {
-  return <Brands />;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          {
+            name: "Home",
+            url: "https://auctore-group.vercel.app",
+          },
+          {
+            name: "Brand",
+            url: "https://auctore-group.vercel.app/brands",
+          },
+        ]}
+      />
+
+      <Brands />
+    </>
+  );
 }
