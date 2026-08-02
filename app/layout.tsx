@@ -2,16 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { inter, playfair } from "@/config";
-import ScrollProgress from "@/components/ui/ScrollProgress";
-import { PageTransition } from "@/components/transition";
-import { StructuredData } from "@/components/seo";
-import {
-  organizationSchema,
-  websiteSchema,
-} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://auctoregroup.com"),
+  metadataBase: new URL("https://auctore-group.vercel.app"),
+
+  verification: {
+    google: "PASTE_GOOGLE_VERIFICATION_CODE_HERE",
+  },
 
   title: {
     default: "Auctore Group",
@@ -19,7 +16,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Auctore Group merupakan perusahaan holding fashion yang membangun berbagai brand fashion berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
+    "Auctore Group merupakan perusahaan holding fashion yang membangun berbagai brand berkualitas melalui inovasi, craftsmanship, dan visi jangka panjang.",
 
   keywords: [
     "Auctore Group",
@@ -47,7 +44,6 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-
     googleBot: {
       index: true,
       follow: true,
@@ -64,7 +60,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://auctoregroup.com",
+    url: "https://auctore-group.vercel.app",
+
     siteName: "Auctore Group",
 
     title: "Auctore Group",
@@ -131,17 +128,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background font-sans text-foreground antialiased">
-        {/* Structured Data */}
-        <StructuredData data={organizationSchema} />
-        <StructuredData data={websiteSchema} />
-
-        {/* Scroll Progress */}
-        <ScrollProgress />
-
-        {/* Page Transition */}
-        <PageTransition>
-          {children}
-        </PageTransition>
+        {children}
       </body>
     </html>
   );
