@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
+import { MarketplaceCard } from "@/components/ui";
+
 export default function HeroContent() {
   return (
     <div className="max-w-xl">
@@ -17,25 +19,44 @@ export default function HeroContent() {
       </h1>
 
       <p className="mt-8 text-lg leading-8 text-neutral-600">
-        Auctore Group mengembangkan berbagai brand fashion yang mengutamakan kualitas, inovasi, dan craftsmanship untuk menghadirkan produk yang relevan bagi gaya hidup modern.
+        Auctore Group mengembangkan berbagai brand fashion yang
+        mengutamakan kualitas, inovasi, dan craftsmanship untuk
+        menghadirkan produk yang relevan bagi gaya hidup modern.
       </p>
 
-      <div className="mt-12 flex flex-wrap gap-4">
+      <div className="mt-12">
         <Link
           href="/brands"
-          className="inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-neutral-800"
+          className="group inline-flex h-14 items-center gap-2 rounded-full bg-black px-8 text-sm font-medium text-white transition-all duration-300 hover:-translate-y-1 hover:bg-neutral-800 hover:shadow-xl"
         >
           Explore Brands
 
-          <ArrowRight className="h-4 w-4" />
+          <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
+      </div>
 
-        <Link
-          href="/about"
-          className="inline-flex h-14 items-center rounded-full border border-neutral-300 px-8 text-sm font-medium transition hover:border-black hover:bg-neutral-50"
-        >
-          Tentang Kami
-        </Link>
+      <div className="mt-12">
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-neutral-500">
+          Official Store
+        </p>
+
+        <div className="mt-5 space-y-4">
+          <MarketplaceCard
+            logo="/images/brand/jenn-aira-logo.png"
+            brand="Jenn Aira"
+            marketplace="Official Shopee Store"
+            href="https://id.shp.ee/fJ4RSuH"
+            hoverColor="hover:border-[#EE4D2D]"
+          />
+
+          <MarketplaceCard
+            logo="/images/brand/auctore-logo.png"
+            brand="Auctfits"
+            marketplace="Official TikTok Shop"
+            href=" https://vt.tiktok.com/ZS9hBKYUuLsdV-T4slC/"
+            hoverColor="hover:border-black"
+          />
+        </div>
       </div>
     </div>
   );
